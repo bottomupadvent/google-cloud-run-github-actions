@@ -37,4 +37,5 @@ jobs:
         gcloud run deploy test --image gcr.io/${{ secrets.GCP_PROJECT }}/test \
         --platform managed \
         --allow-unauthenticated \
+        --tag v.01 \
         --memory 512M
